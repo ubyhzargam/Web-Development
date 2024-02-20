@@ -1,36 +1,56 @@
 h1,h3
 {
+    font-family: Rockwell;
     text-align: center;
-    color: rgb(171, 61, 249);
+    color: rgb(172, 161, 255);
+}
+h1
+{
+    font-size: 80px;
+}
+h3
+{
+    color:rgb(31, 170, 27);
+    font-size:40px;
 }
 h4
 {
-    color:rgb(171, 61, 249);
+    font-size:20px;
+    font-family: Rockwell;
+    color:rgb(172, 161, 255);
 }
 button
 {
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 255, 238);
+    color: rgb(0, 0, 0);
 }
 form
-{
-    background-color: rgb(57, 57, 57);
-    color:rgb(255, 196, 0);
+{ 
+    color:rgb(0, 255, 238);
 }
 body{
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(0, 0, 0);
     color:white;
     line-height: 1.5;
     letter-spacing: 1px;
 }
 a{
     text-decoration: none;
-    color: rgb(0, 179, 255);
+    color: rgb(0, 55, 255);
 }
-li{
-    color:rgb(255, 196, 0);
+li
+{
+    font-size:16px;
+    font-family: Helvetica;
+    color:rgb(0, 255, 238);
 }
 footer
 {
-    color:rgb(245, 78, 167);
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+p
+{
+    font-size:16px;
+    font-family: Helvetica;
 }
