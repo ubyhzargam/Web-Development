@@ -21,8 +21,20 @@ h4
 }
 button
 {
-    background-color: rgb(0, 255, 238);
-    color: rgb(0, 0, 0);
+    border:none;
+    border-radius:4px;
+    transition-duration: 0.8s;
+    padding: 4px 12px 4px 12px;
+    background-color: rgb(186, 102, 255);
+    color: rgb(255, 255, 255);
+}
+
+button:hover
+{
+    border-radius:12px;
+    background-color: rgb(168, 61, 255);
+    transition-duration: 0.8s;
+    transform: scale(1.04) translateY(-6px);  
 }
 form
 { 
@@ -35,11 +47,18 @@ body{
     letter-spacing: 1px;
 }
 a{
+    transition-duration: 0.5s;
     text-decoration: none;
-    color: rgb(0, 55, 255);
+    color: rgb(140, 0, 255);
+}
+a:hover
+{
+    transition-duration: 0.5s;
+    color: rgb(202, 137, 255);
 }
 li
 {
+    transition-duration: 1s;
     font-size:16px;
     font-family: Helvetica;
     color:rgb(0, 255, 238);
@@ -53,4 +72,38 @@ p
 {
     font-size:16px;
     font-family: Helvetica;
+}
+
+ul li:hover
+{
+    transition-duration: 1s;
+    transform: translateX(16px);
+}
+
+ol li:hover
+{
+    transition-duration: 1s;
+    transform: translateX(16px);
+}
+
+#image
+{
+    transition-duration: 0.8s;
+}
+
+#image:hover
+{
+    transform: scale(1.1) translateX(16px );
+    border-radius: 8px 32px 8px 32px;
+    transition-duration: 0.8s;
+}
+
+input[type="radio"]:checked+label
+{
+    color:rgb(0, 255, 76);
+}
+
+input[type="checkbox"]:checked+label
+{
+    color:rgb(0, 255, 76);
 }
