@@ -38,6 +38,7 @@ button:hover
 }
 form
 { 
+
     color:rgb(0, 255, 238);
 }
 body{
@@ -106,4 +107,30 @@ input[type="radio"]:checked+label
 input[type="checkbox"]:checked+label
 {
     color:rgb(0, 255, 76);
+}
+
+li::selection,a::selection,p::selection,label::selection
+{
+    background-color: white;
+    color:black;
+}
+
+p::first-letter
+{
+font-size: 28px;
+font-weight: bold;
+}
+
+input
+{
+    transition-duration: 0.4s;
+}
+input:focus-visible
+{
+    outline:none;
+    border: 2px rgb(168, 61, 255) solid;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    transform: scale(1.03);
+    background-color: rgb(215, 215, 215);
 }
