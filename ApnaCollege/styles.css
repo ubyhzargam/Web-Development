@@ -10,7 +10,7 @@ h1
 }
 h3
 {
-    color:rgb(31, 170, 27);
+    color:rgb(172, 161, 255);
     font-size:40px;
 }
 h4
@@ -21,6 +21,7 @@ h4
 }
 button
 {
+    display:block;
     border:none;
     border-radius:4px;
     transition-duration: 0.8s;
@@ -38,10 +39,22 @@ button:hover
 }
 form
 { 
-
+    transition-duration: 0.7s;
+    border-radius: 16px;
     color:rgb(0, 255, 238);
+    padding:80px 0px 80px 96px;
+    background-color: rgb(31, 26, 36);
+    margin:0px 320px 0px 320px;
+}
+form:hover
+{
+    border-radius:72px 0px 72px 0px;
+    transform: scale(1.01);
+    transition-duration: 0.7s;
+    background-color: rgb(25, 25, 25);
 }
 body{
+    margin-left:64px;
     background-color: rgb(0, 0, 0);
     color:white;
     line-height: 1.5;
@@ -99,6 +112,11 @@ ol li:hover
     transition-duration: 0.8s;
 }
 
+input[type="radio"]
+{
+    display:inline;
+}
+
 input[type="radio"]:checked+label
 {
     color:rgb(0, 255, 76);
@@ -123,6 +141,9 @@ font-weight: bold;
 
 input
 {
+    margin:0px 2px 0px 2px;
+    margin-bottom:24px;
+    display: block;
     transition-duration: 0.4s;
 }
 input:focus-visible
@@ -133,4 +154,33 @@ input:focus-visible
     transition-duration: 0.4s;
     transform: scale(1.03);
     background-color: rgb(215, 215, 215);
+}
+input[type="email"],input[type="number"],input[type="text"]
+{
+    height:20px;
+    width:160px;
+}
+
+footer
+{
+    background-color:rgb(25, 25, 25);
+}
+
+select
+{
+    margin :0px 2px 0px 2px;
+    margin-bottom:24px;
+    display:block;
+}
+
+input[type="checkbox"]
+{
+    display:inline;
+}
+
+#footer
+{
+    padding-top:64px;
+    margin-top:64px;
+    margin-right:64px;
 }
