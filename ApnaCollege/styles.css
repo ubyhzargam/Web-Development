@@ -21,6 +21,7 @@ h4
 }
 button
 {
+    box-shadow: 2px 2px 3px rgb(235, 211, 255);
     display:block;
     border:none;
     border-radius:4px;
@@ -32,6 +33,7 @@ button
 
 button:hover
 {
+    box-shadow: 2px 2px 6px rgb(238, 218, 255);
     border-radius:12px;
     background-color: rgb(168, 61, 255);
     transition-duration: 0.8s;
@@ -39,6 +41,7 @@ button:hover
 }
 form
 { 
+    box-shadow:6px 6px 12px rgb(202, 137, 255);
     transition-duration: 0.7s;
     border-radius: 16px;
     color:rgb(0, 255, 238);
@@ -48,6 +51,7 @@ form
 }
 form:hover
 {
+    box-shadow:8px 8px 32px rgb(221, 179, 255);
     border-radius:72px 0px 72px 0px;
     transform: scale(1.01);
     transition-duration: 0.7s;
