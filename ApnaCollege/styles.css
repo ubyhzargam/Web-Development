@@ -188,3 +188,10 @@ input[type="checkbox"]
     margin-top:64px;
     margin-right:64px;
 }
+
+#img, #table
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
