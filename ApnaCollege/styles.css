@@ -41,24 +41,24 @@ button:hover
 }
 form
 { 
-    box-shadow:6px 6px 12px rgb(202, 137, 255);
     transition-duration: 0.7s;
     border-radius: 16px;
     color:rgb(0, 255, 238);
     padding:80px 0px 80px 96px;
-    background-color: rgb(31, 26, 36);
+    background-color: rgb(25, 25, 25);
     margin:0px 320px 0px 320px;
+    margin-bottom: 80px;
+    animation: boxshadow 2s linear 0s infinite alternate;
 }
 form:hover
 {
-    box-shadow:8px 8px 32px rgb(221, 179, 255);
     border-radius:72px 0px 72px 0px;
     transform: scale(1.01);
     transition-duration: 0.7s;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(34, 21, 45);
 }
 body{
-    margin-left:64px;
+
     background-color: rgb(0, 0, 0);
     color:white;
     line-height: 1.5;
@@ -76,6 +76,7 @@ a:hover
 }
 li
 {
+    margin-left: 64px;
     transition-duration: 1s;
     font-size:16px;
     font-family: Helvetica;
@@ -184,9 +185,14 @@ input[type="checkbox"]
 
 #footer
 {
+
     padding-top:64px;
+    padding-bottom:64px;
     margin-top:64px;
-    margin-right:64px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #img, #table
@@ -195,3 +201,82 @@ input[type="checkbox"]
     flex-direction: row;
     justify-content:center;
 }
+
+#cont
+{   
+    margin-top:48px;
+    margin-bottom:120px;
+    display:flex;
+    justify-content: center;
+}
+
+#container
+{
+    animation: boxshadow 2s linear 0s infinite alternate;
+    transition-duration: 1s;
+    background-color:   rgb(25, 25, 25);
+    height : 900px;
+    width : 1000px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items:center;
+    border-radius: 6%;
+}
+
+#container:hover
+{
+    border-radius:3%;
+    transition-duration:1s;
+    background-color: rgb(34, 21, 45);
+}
+
+#books
+{
+    transition-duration:1s;
+    border-radius:2%;
+    background-color: rgb(0, 0, 0);
+    height:360px;
+    width:240px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#books:hover
+{
+    border-radius:0px;
+    background-color: rgb(10, 10, 10);
+    transition-duration: 1s;
+    transform:scale(1.05);
+}
+
+#book
+{
+    margin-bottom:16px;
+    height:260px;
+    width:180px;
+}
+
+body p, body a
+{
+    margin-left: 64px;
+}
+
+@keyframes boxshadow
+{
+    0%
+    {
+        box-shadow:6px 6px 12px rgb(202, 137, 255);
+    }
+ 
+    100%
+    {
+        box-shadow: 6px 6px 12px rgb(137, 255, 172);
+    }
+}
+
