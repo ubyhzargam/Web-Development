@@ -152,7 +152,7 @@ input
     margin:0px 2px 0px 2px;
     margin-bottom:24px;
     display: block;
-    transition-duration: 0.5s;
+    transition:linear 0.5s;
 }
 input:focus-visible
 {
@@ -160,7 +160,7 @@ input:focus-visible
     outline:none;
     border: 2px rgb(168, 61, 255) solid;
     border-radius: 8px;
-    transition-duration: 0.5s;
+    transition: linear 0.5s;
     transform: scale(1.03);
     background-color: rgb(215, 215, 215);
 }
@@ -258,11 +258,13 @@ input[type="checkbox"]
 
 #books:hover
 {
+    animation:border-bottom 1s linear 0s 1 normal;
     border-radius:0px;
     background-color: rgb(10, 10, 10);
     transition-duration: 0.8s;
     transform:scale(1.05);
 }
+
 
 #book
 {
@@ -292,6 +294,7 @@ body p, body a
   height: 64px;
   animation: spin 2s linear infinite;
 }
+
 
 @keyframes boxshadow
 {
@@ -329,3 +332,6 @@ body p, body a
       background-position: 0% 50%;
     }
   }
+
+
+
