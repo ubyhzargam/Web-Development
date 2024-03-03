@@ -2,12 +2,15 @@
 {
     margin:0px;
     padding:0px;
+
 }
 
 header
 {
     margin-top:1%;
     margin-bottom:2%;
+    margin-left: 12%;
+    margin-right:12%;
 }
 
 #nav
@@ -15,14 +18,15 @@ header
     display:flex;
     flex-direction: row;
     justify-content: end;
+    flex-wrap:wrap;
     align-items: center;
     height:48px;
 }
 
 #navitem
 {
-    margin-left:1.5%;
-    margin-right:1.5%;
+    margin-left:1.4%;
+    margin-right:1.4%;
     color:rgb(43, 43, 43);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -44,10 +48,13 @@ header
 
 #firstsection
 {
-    margin-top:4%;
+    margin-left:12%;
+    margin-right:12%;
+    margin-top:6%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 260px;
+    margin-bottom:4%;
 }
 
 #infosection
@@ -64,13 +71,23 @@ header
 }
 #imgsection img
 {
+    transition-duration: 0.8s;
     height: 100%;
     border-radius:50%;
+    opacity: 0.85;
+}
+
+#imgsection img:hover
+{
+    opacity: 1;
+    transition-duration: 0.8s;
+    border-radius:38%;
 }
 
 #firstsection #contactsec #first
 {
-  font-size:400%;
+    
+  font-size:500%;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -89,4 +106,257 @@ header
 {
   font-size: 120%;
   margin-bottom:4%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+#about
+{
+    margin:12%;
+}
+
+#about #aboutme
+{
+    font-family: "Roboto", sans-serif;
+    font-size:160%;
+    font-weight: 100;
+    color:rgb(123, 0, 255);
+    margin-bottom:3%;
+}
+
+#about #desc
+{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size:120%;
+    line-height: 130%;
+}
+
+#exp
+{
+    margin-left:12%;
+    margin-right: 12%;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+#expdiv
+{
+    background-color: rgb(246, 246, 246);
+    background: linear-gradient(180deg,rgb(246, 246, 246),rgb(246, 246, 246),rgb(206, 199, 233));
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
+}
+
+#expdesc #expdeschead
+{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size:240%;
+    margin-bottom: 6%;
+}
+
+#expdesc 
+{
+    margin-top:6ch;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+#expdesc #exp1
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom:8%;
+}
+
+#exphead
+{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+
+ #expheadyear
+{
+    margin-bottom:10%;
+    font-size:120%;
+    font-weight: bold;
+}
+
+#expheadtitle
+{
+    font-size:100%;
+    color:rgb(58, 58, 58);
+    font-weight: bolder;
+    
+}
+
+#expinfo
+{
+    width:40%;
+}
+
+#expinfotitle
+{
+    margin-bottom:4%;
+    font-size:120%;
+    color:rgb(123, 0, 255);
+}
+
+#expinfoinfo
+{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+
+#anim
+{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    margin-right : 16%;
+}
+
+#edu
+{
+    margin-top:8%;
+    margin-bottom:8%;
+    margin-left:12%;
+    margin-right:12%;
+}
+
+#edu1
+{
+    display: flex;
+    justify-content: center;
+}
+
+#rv
+{
+    transition-duration: 0.8s;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 32px;
+    width:1200px;
+    height:320px;
+    background-color: rgb(246, 246, 246);
+}
+
+#rv:hover
+{
+    transition-duration: 0.8s;
+    transform: scale(1.01);
+    background-color: rgb(240, 240, 240);
+    box-shadow: 4px 4px 8px gray;
+}
+
+#headinfo
+{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size:240%;
+    text-align: start;
+    margin-bottom: 4%;
+}
+
+#rvinfo
+{
+    margin-right:8%;
+}
+
+#rvimg
+{
+    transition-duration: 0.8s;
+    margin-left:8%;
+    height: 48%;
+    opacity:0.8;
+}
+
+#rvimg:hover
+{
+    opacity:1;
+    transition-duration: 0.8s;
+    transform: scale(1.04);
+
+}
+
+#rvinfohead
+{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size:180%;
+    margin-bottom:8%;
+    color:rgb(123, 0, 255);
+}
+
+#rvinfodesc div
+{
+    margin-bottom:2%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#rvinfodesc1
+{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:120%;
+    color:rgb(56, 56, 56);
+    margin-bottom:6%;
+}
+
+#profilesdiv
+{
+    margin-left:12%;
+    margin-right:12%;
+    margin-bottom:8%;
+}
+
+#profilesindicont
+{
+    background-color: rgb(190, 190, 190);
+    height:200px;
+    width:200px;
+    border-radius:16%;
+}
+
+#profilescontainer
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items:center;
+    row-gap:24%;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
