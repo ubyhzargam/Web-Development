@@ -218,9 +218,9 @@ input[type="checkbox"]
 
 #container
 {
-  background: linear-gradient(235deg,#000000,#3a3a5f,#2f2fad,#1010d0);
-  background-size: 240% 240%;
-  animation: gradient-animation 6s ease infinite ;
+  background: linear-gradient(235deg,#000000,#313149,#3a3a5f,#2f2fad,#1010d0);
+  background-size: 200% 200%;
+  animation: gradient-animation 6s ease infinite alternate;
     transition-duration: 1s;
     background-color:   rgb(25, 25, 25);
     height : 900px;
