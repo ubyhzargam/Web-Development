@@ -348,6 +348,27 @@ header
     row-gap:24%;
 }
 
+@media (min-width:200px) and (max-width :900px) 
+{
+    #expdesc #exp1
+    {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    #anim
+    {
+        display:none;
+    }
+}
+
+@media (min-width:200px) and (max-width :650px) 
+{
+    #imgsection
+    {
+        display:none;
+    }
+}
 
 @keyframes gradient-animation {
     0% {
