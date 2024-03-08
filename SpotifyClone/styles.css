@@ -33,12 +33,12 @@
 
 .music-player
 {
-    background-color: violet;
+    background-color: black;
     position:fixed;
     bottom: 0px;
     left:0;
     width: 100%;
-    height: 72px;
+    height: 92px;
     border-radius: 1rem;
 }
 
@@ -180,6 +180,7 @@ a
 
 .sticky-nav
 {
+    z-index: 10;
     position: sticky;
     top:0;
     background-color: #232323;
@@ -286,6 +287,74 @@ h2
 {
     height:300px;
     background-color: #232323;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line
+{
+    height: 40%;
+    width:90%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+    background-color: #232323;
+}
+
+.music-player
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album
+{
+    width:25%;
+}
+
+.player
+{
+    width:50%;
+}
+
+.controls
+{
+    width:25%;
+}
+
+.player-controls
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon
+{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover
+{
+    opacity: 1;
+}
+
+.playback-bar
+{
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar
+{
+    width:70%;
+    background-color: transparent;
+    cursor:pointer;
 }
 
 @media (max-width:1000px)
