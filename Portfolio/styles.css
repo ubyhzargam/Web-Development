@@ -408,11 +408,17 @@ header
     color:rgb(111, 0, 255);
 }
 
-#skillssection
+#skillssectiondiv
 {
     margin-left:12%;
     margin-right:12%;
     margin-bottom:12%;
+}
+
+#skillssection
+{
+    display:flex;
+    justify-content: space-evenly;
 }
 
 #skillssectionheading
@@ -422,7 +428,7 @@ header
     font-weight: 800;
     font-style: normal;
     font-size:240%;
-    margin-bottom:6%;
+    margin-bottom:4%;
 }
 
 @media (min-width:200px) and (max-width :900px) 
